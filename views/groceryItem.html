@@ -1,0 +1,11 @@
+<span style="font-weight: bold;"> {{item.itemName | uppercase }} </span>
+			
+<!-- Delete Item -->
+<button type="button" class="btn btn-sm btn-danger pull-right" style="margin-left: 10px;" ng-click="removeItem(item)">
+	<span class="glyphicon glyphicon-trash"> </span>
+</button>
+
+<!-- Edit Item -->
+<a href="#!/addItem/edit/{{item.id}}" class="btn btn-sm btn-default pull-right">
+	<span class="glyphicon glyphicon-pencil"> </span>
+</a>
